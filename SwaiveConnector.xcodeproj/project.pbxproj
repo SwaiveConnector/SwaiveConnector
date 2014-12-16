@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C22BC27F1A3EE77500F29701 /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C22BC27B1A3EE77500F29701 /* BLEUtility.m */; };
+		C22BC2801A3EE77500F29701 /* thermoSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = C22BC27D1A3EE77500F29701 /* thermoSensor.m */; };
 		C290B4A21A30745400981E64 /* SwaiveConnector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C290B4A11A30745400981E64 /* SwaiveConnector.h */; };
 		C290B4A41A30745400981E64 /* SwaiveConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = C290B4A31A30745400981E64 /* SwaiveConnector.m */; };
 		C290B4AA1A30745400981E64 /* libSwaiveConnector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C290B49E1A30745400981E64 /* libSwaiveConnector.a */; };
@@ -36,6 +38,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C21951E31A3FFB1500AB6570 /* SwaiveConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwaiveConnector.h; sourceTree = "<group>"; };
+		C22BC2791A3EE77500F29701 /* STservices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STservices.h; sourceTree = "<group>"; };
+		C22BC27A1A3EE77500F29701 /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
+		C22BC27B1A3EE77500F29701 /* BLEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEUtility.m; sourceTree = "<group>"; };
+		C22BC27C1A3EE77500F29701 /* thermoSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thermoSensor.h; sourceTree = "<group>"; };
+		C22BC27D1A3EE77500F29701 /* thermoSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thermoSensor.m; sourceTree = "<group>"; };
+		C22BC27E1A3EE77500F29701 /* STcharacteristics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STcharacteristics.h; sourceTree = "<group>"; };
 		C290B49E1A30745400981E64 /* libSwaiveConnector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwaiveConnector.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C290B4A11A30745400981E64 /* SwaiveConnector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwaiveConnector.h; sourceTree = "<group>"; };
 		C290B4A31A30745400981E64 /* SwaiveConnector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwaiveConnector.m; sourceTree = "<group>"; };
@@ -62,6 +71,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C21951E11A3FFB1500AB6570 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C21951E21A3FFB1500AB6570 /* SwaiveConnector */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		C21951E21A3FFB1500AB6570 /* SwaiveConnector */ = {
+			isa = PBXGroup;
+			children = (
+				C21951E31A3FFB1500AB6570 /* SwaiveConnector.h */,
+			);
+			path = SwaiveConnector;
+			sourceTree = "<group>";
+		};
 		C290B4951A30745300981E64 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,13 @@
 		C290B4A01A30745400981E64 /* SwaiveConnector */ = {
 			isa = PBXGroup;
 			children = (
+				C21951E11A3FFB1500AB6570 /* include */,
+				C22BC2791A3EE77500F29701 /* STservices.h */,
+				C22BC27A1A3EE77500F29701 /* BLEUtility.h */,
+				C22BC27B1A3EE77500F29701 /* BLEUtility.m */,
+				C22BC27C1A3EE77500F29701 /* thermoSensor.h */,
+				C22BC27D1A3EE77500F29701 /* thermoSensor.m */,
+				C22BC27E1A3EE77500F29701 /* STcharacteristics.h */,
 				C290B4A11A30745400981E64 /* SwaiveConnector.h */,
 				C290B4A31A30745400981E64 /* SwaiveConnector.m */,
 			);
@@ -193,6 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C22BC2801A3EE77500F29701 /* thermoSensor.m in Sources */,
+				C22BC27F1A3EE77500F29701 /* BLEUtility.m in Sources */,
 				C290B4A41A30745400981E64 /* SwaiveConnector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -282,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -294,6 +328,7 @@
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -303,6 +338,7 @@
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -356,6 +392,7 @@
 				C290B4B41A30745400981E64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C290B4B51A30745400981E64 /* Build configuration list for PBXNativeTarget "SwaiveConnectorTests" */ = {
 			isa = XCConfigurationList;
@@ -364,6 +401,7 @@
 				C290B4B71A30745400981E64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
