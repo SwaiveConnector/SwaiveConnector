@@ -2,8 +2,9 @@
 //  STservices.h
 //  TestlibObjectc
 //
-//  Created by krishnaraj on 09/12/14.
-//  Copyright (c) 2014 kliotech. All rights reserved.
+//  Created by Victor
+//  Developer
+//  Copyright (c) 2014 Kliotech. All rights reserved.
 //
 
 #ifndef TestlibObjectc_ThermometerInfo_h

@@ -2,8 +2,9 @@
 //  SwaiveConnector.h
 //  SwaiveConnector
 //
-//  Created by krishnaraj on 04/12/14.
-//  Copyright (c) 2014 kliotech. All rights reserved.
+//  Created by Victor
+//  Developer
+//  Copyright (c) 2014 Kliotech. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -23,8 +24,16 @@
 
 @property (nonatomic,strong) id<SwaiveConnectorDelegate> delegate;
 @property (readonly,nonatomic) CBCentralManager *blueToothManager;
+@property (weak,nonatomic) CBPeripheral *currentPeripheral;
 @property (readonly,nonatomic) NSMutableArray *peripherals;
 
+-(NSString *)getBatteryLevel;
 +(SwaiveConnector *)sharedManager;
 -(void)initialize;
+-(void)setBrightness:(double)value;
+-(NSString *)getCurrentBrightnessValue;
+-(int)getStoredReadingCount;
+-(void)setTemperatureFormat:(int)type;
 @end
+
+

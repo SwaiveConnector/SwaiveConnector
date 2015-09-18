@@ -2,8 +2,9 @@
 //  BLEUtility.m
 //  TestlibObjectc
 //
-//  Created by krishnaraj on 12/12/14.
-//  Copyright (c) 2014 kliotech. All rights reserved.
+//  Created by Victor
+//  Developer
+//  Copyright (c) 2014 Kliotech. All rights reserved.
 //
 #import "BLEUtility.h"
 
@@ -51,6 +52,21 @@
             }
         }
     }
+}
+
++(NSData *)readAndReturnCharacteristic:(CBPeripheral *)peripheral sUUID:(NSString *)sUUID cUUID:(NSString *)cUUID {
+    for ( CBService *service in peripheral.services ) {
+        if([service.UUID isEqual:[CBUUID UUIDWithString:sUUID]]) {
+            for ( CBCharacteristic *characteristic in service.characteristics ) {
+                if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:cUUID]]) {
+                    /* Everything is found, read characteristic ! */
+                    [peripheral readValueForCharacteristic:characteristic];
+                    return characteristic.value;
+                }
+            }
+        }
+    }
+    return NULL;
 }
 
 +(void)readCharacteristic:(CBPeripheral *)peripheral sCBUUID:(CBUUID *)sCBUUID cCBUUID:(CBUUID *)cCBUUID {

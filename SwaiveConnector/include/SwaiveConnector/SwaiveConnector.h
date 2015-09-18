@@ -2,7 +2,8 @@
 //  SwaiveConnector.h
 //  SwaiveConnector
 //
-//  Created by krishnaraj on 04/12/14.
+//  Created by Victor
+//  Developer
 //  Copyright (c) 2014 kliotech. All rights reserved.
 //
 
